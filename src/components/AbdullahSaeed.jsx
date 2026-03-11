@@ -18,6 +18,14 @@ const AbdullahSaeed = () => {
     
     }
 
+    const user=useNavigate();
+
+const okAdd=()=>{
+  return(
+    user('/okAdd')
+  )
+}
+
     useEffect(()=>{
         GetUser();
     })
@@ -34,7 +42,7 @@ const AbdullahSaeed = () => {
 </div>
 </div>
 <div>
-   <button type="button" class="btn btn-primary btn-lg" >Button</button> 
+   <button type="button" class="btn btn-primary btn-lg" onClick={()=>okAdd('king')} >Button</button> 
 </div>
 
 </div><hr />

@@ -6,13 +6,12 @@ import AbdullahSaeed from './components/AbdullahSaeed';
 function App() {
   return (
     <div className="App">
-      {/* <AbdullahSaeed/> */}
-{/* <UseCallback/> */}
+   
 
   <BrowserRouter>
       <Routes>
-        <Route exact path='/' element={<UseCallback/>}/>
-      <Route exact path='/okAdduser' element={<Junaid/>}/>
+        <Route exact path='/' element={<AbdullahSaeed/>}/>
+      <Route exact path='/okAdd' element={<Junaid/>}/>
       </Routes>
 
       </BrowserRouter>
