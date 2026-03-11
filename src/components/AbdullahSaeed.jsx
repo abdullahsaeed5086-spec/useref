@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import React, { useEffect, useState } from 'react'
 
 const AbdullahSaeed = () => {
@@ -6,6 +7,14 @@ const AbdullahSaeed = () => {
     //  console.log("---",data);
     const [error,setError]=useState(false);
     const [loading,setLoading]=useState(true);
+
+       const user=useNavigate();
+
+const okAdd=()=>{
+  return(
+    user('/okAdd')
+  )
+}
 
     function GetUser(){
         axios.get('https://681c3df26ae7c794cf711726.mockapi.io/StudentDetails').then((response)=>{
@@ -18,13 +27,7 @@ const AbdullahSaeed = () => {
     
     }
 
-    const user=useNavigate();
-
-const okAdd=()=>{
-  return(
-    user('/okAdd')
-  )
-}
+ 
 
     useEffect(()=>{
         GetUser();
@@ -42,7 +45,7 @@ const okAdd=()=>{
 </div>
 </div>
 <div>
-   <button type="button" class="btn btn-primary btn-lg" onClick={()=>okAdd('king')} >Button</button> 
+   <button type="button" class="btn btn-primary btn-lg" onClick={()=>okAdd()} >Button</button> 
 </div>
 
 </div><hr />

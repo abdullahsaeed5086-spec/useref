@@ -2,7 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import UseCallback from './components/UseCallback';
 import AbdullahSaeed from './components/AbdullahSaeed';
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Junaid from './components/Junaid';
 function App() {
   return (
     <div className="App">
@@ -13,7 +14,6 @@ function App() {
         <Route exact path='/' element={<AbdullahSaeed/>}/>
       <Route exact path='/okAdd' element={<Junaid/>}/>
       </Routes>
-
       </BrowserRouter>
     </div>
   );
