@@ -6,8 +6,14 @@ import Junaid from './components/Junaid';
 function App() {
   return (
     <div className="App">
-<UseCallback/>
-<Junaid/>
+
+  <BrowserRouter>
+      <Routes>
+        <Route exact path='/' element={<UseCallback/>}/>
+      <Route exact path='/okAdduser' element={<Junaid/>}/>
+      </Routes>
+
+      </BrowserRouter>
     </div>
   );
 }
