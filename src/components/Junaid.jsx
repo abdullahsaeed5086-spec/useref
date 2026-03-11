@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import { CiFacebook } from "react-icons/ci";
 import { FaYoutube } from "react-icons/fa";
 
-const [hhh,setHHH]=useState('')
+
 
 const Junaid = () => {
+    const [hhh,setHHH]=useState('')
   return (
     <div>
     
