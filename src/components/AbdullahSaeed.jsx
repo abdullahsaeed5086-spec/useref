@@ -34,7 +34,7 @@ const AbdullahSaeed = () => {
 </div>
 </div>
 <div>
-   <button type="button" class="btn btn-primary btn-lg" >Clickme</button> 
+   <button type="button" class="btn btn-primary btn-lg" >Button</button> 
 </div>
 
 </div><hr />

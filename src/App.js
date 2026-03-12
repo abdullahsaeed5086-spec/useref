@@ -6,8 +6,16 @@ import AbdullahSaeed from './components/AbdullahSaeed';
 function App() {
   return (
     <div className="App">
-      <AbdullahSaeed/>
+      {/* <AbdullahSaeed/> */}
 {/* <UseCallback/> */}
+
+  <BrowserRouter>
+      <Routes>
+        <Route exact path='/' element={<UseCallback/>}/>
+      <Route exact path='/okAdduser' element={<Junaid/>}/>
+      </Routes>
+
+      </BrowserRouter>
     </div>
   );
 }
